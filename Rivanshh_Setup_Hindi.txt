@@ -1,0 +1,11 @@
+RIVANSHH SUPER APP — QUICK SETUP
+
+1) ZIP extract karo. index.html frontend hai.
+2) Python 3.10+ install karo. Terminal/CMD mein backend folder kholo.
+3) pip install -r requirements.txt
+4) .env.example ki copy bana kar uska naam .env rakho. .env mein API_KEY= ke baad apni AloneAPI key paste karo. GEMINI_API_KEY optional hai; AI ke liye chahiye. .env ko GitHub par upload MAT karna.
+5) Backend folder mein run karo: uvicorn app:app --host 0.0.0.0 --port 8000
+6) Browser mein http://127.0.0.1:8000/api/health check karo.
+7) Frontend ko backend ke saath connect karne ke liye index.html ke integration bridge mein APP_BACKEND_URL ko apne deployed HTTPS backend URL se replace karo. Local setup mein same-origin server arrangement ya URL setting ki zaroorat padegi. GitHub Pages Python backend run nahi karta; backend alag host par deploy karna padega.
+
+NOTE: API service ko live verify nahi kar paye, isliye key/server valid hona confirm nahi hai. Firebase login ke liye Firebase Console config chahiye. UPI payment intent kholta hai, payment verify nahi karta. APK build is ZIP se automatically nahi hota; Flutter source files sirf included hain.
